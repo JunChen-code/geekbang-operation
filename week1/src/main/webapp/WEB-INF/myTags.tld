@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>week1-tags</short-name>
+    <uri>/mine-tags</uri>
+
+    <tag>
+        <name>print_date</name>
+        <tag-class>com.geekbank.stage1.tag.MyTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+
+    <tag>
+        <name>selectTag</name>
+        <tag-class>com.geekbank.stage1.tag.SelectTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>options</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.util.List</type>
+        </attribute>
+
+        <attribute>
+            <name>name</name>
+            <required>false</required>
+        </attribute>
+
+        <attribute>
+            <name>size</name>
+            <required>false</required>
+        </attribute>
+    </tag>
+
+</taglib>
